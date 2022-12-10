@@ -1,0 +1,78 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 600;
+  transition-duration: 1s;
+  color: rgb(158, 105, 223);
+}
+
+body {
+  background-color: rgb(26, 19, 68);
+}
+
+.logo {
+  float: left;
+  margin-left: 5%;
+  line-height: 50px;
+  font-size: 2em;
+}
+
+nav {
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+nav:hover {
+  box-shadow: 0 0 20px rgb(255, 69, 221);
+  transition: 1s ease-in-out;
+}
+nav:hover li a {
+  text-shadow: 0 0 10px rgba(133, 11, 113, 0.8);
+  transition-duration: 1s;
+  border-radius: 4px;
+}
+
+ul {
+  text-align: center;
+  height: 50px;
+  background: linear-gradient(to bottom, rgb(117, 19, 124), rgba(47, 21, 193, 0.523));
+}
+
+li {
+  display: inline-block;
+}
+li:not(:first-child) {
+  padding: 0 2%;
+}
+li:hover a {
+  position: relative;
+  color: rgb(204, 167, 255);
+  border: 1px solid transparent;
+  transition: 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  line-height: 50px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  transition-duration: 1s;
+}
+
+li:not(:first-child) a:hover {
+  border: 1px solid #b420be;
+  background: rgba(215, 25, 123, 0.149);
+  box-shadow: 0 0 5px 1px #000000;
+  transition-duration: 1s;
+  font-weight: 700;
+  color: rgb(255, 0, 166);
+}
+
+li:a {
+  transition-duration: 1s;
+}
