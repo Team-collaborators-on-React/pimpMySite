@@ -7,15 +7,12 @@ import NavBar from '../navBar/NavBar'
 const HomePage = () => {
     return (
         <>
-        <div className={styles.main}>
-            <NavBar/>
-         <div className={styles.rocket_wrapper}>
-         </div>
-            <div className={styles.logos_wrapper}>
+            <div className={styles.main}>
+                <NavBar />
+                <div className={styles.rocket_wrapper}></div>
+                <div className={styles.logos_wrapper}></div>
             </div>
-        </div>
         </>
-       
     )
 }
 
