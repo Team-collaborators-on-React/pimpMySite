@@ -21,7 +21,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "prettier": "npx prettier --write .",
+        "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
