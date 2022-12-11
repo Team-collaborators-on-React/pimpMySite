@@ -14,7 +14,7 @@
     background-size: 50%;
     background-repeat: no-repeat;
     height: 75%;
-    animation: rocket 6s ease-in-out infinite;
+    animation: rocket 10s ease-in-out infinite;
 }
 
 @keyframes rocket {
@@ -22,17 +22,50 @@
         background-position: 50% 55%;
     }
 
+    10% {
+        background-position: 50% 48%;
+    }
+
+    15% {
+        background-position: 50% 52%;
+    }
+
     25% {
         background-position: 50% 50%;
+    }
+
+    35% {
+        background-position: 50% 57%;
+    }
+
+    45% {
+        background-position: 50% 53%;
     }
 
     50%{
         background-position: 50% 55%;
     }
 
+    60% {
+        background-position: 50% 62%;
+    }
+
+    70% {
+        background-position: 50% 58%;
+    }
+
     75% {
         background-position: 50% 60%;
     }
+
+    85% {
+        background-position: 50% 53%;
+    }
+
+    95% {
+        background-position: 50% 57%;
+    }
+
     100% {
         background-position: 50% 55%;
     }
