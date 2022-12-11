@@ -33,6 +33,7 @@ const HomePage = () => {
     }
     fillArray()
     return (
+
         <div className={styles.main}>
             <Layout>
                 {starArray.map((item, index) => {
@@ -47,7 +48,6 @@ const HomePage = () => {
                 </div>
             </Layout>
         </div>
-
     )
 }
 
