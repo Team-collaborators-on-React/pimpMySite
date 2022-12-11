@@ -1,4 +1,4 @@
-* {
+.main {
     font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -7,10 +7,9 @@
     font-weight: 600;
     transition-duration: 0.3s;
     color: rgb(158, 105, 223);
-}
+    background-color: transparent;
+    
 
-body {
-    background-color: rgb(26, 19, 68);
 }
 
 .logo {
@@ -37,7 +36,8 @@ nav:hover li a {
 }
 
 ul {
-    text-align: center;
+    text-align: right;
+    padding-right: 100px;
     height: 50px;
     background: linear-gradient(
         to bottom,
