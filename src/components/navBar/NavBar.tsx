@@ -6,14 +6,15 @@ const NavBar = () => {
     return (
         <div className={styles.main}>
             <nav>
-                
+          
                 <ul>
                     <li className={styles.logo}>
                         <Link to='/'>
                             Pimp My Site <span className={styles.mini}></span>
                         </Link>
                     </li>
-                    <li>
+
+                 <li>
                         <Link to='/services'>
                             Services
                         </Link>
@@ -27,7 +28,7 @@ const NavBar = () => {
                         <Link to='/contactus'>
                             Hit us up
                         </Link>
-                    </li>
+                    </li>                   
                 </ul>
             </nav>
         </div>
