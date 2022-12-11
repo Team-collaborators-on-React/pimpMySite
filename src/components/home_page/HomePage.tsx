@@ -1,11 +1,15 @@
 import styles from './HomePage.module.scss'
 import Layout from '../Layout/Layout'
 
-
+type IStar = {
+    top: string | undefined,
+    left: string | undefined,
+    delay: string & {} | undefined,
+}
 
 
 const HomePage = () => {
-    const starArray = []
+    const starArray: Array<IStar> = []
 
     const randomPercent = (min = 0, max = 100) => {
         const randomInt = Math.floor(Math.random() * (max + 1))
