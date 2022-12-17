@@ -5,16 +5,52 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
+.star {
+    background-color: #f0f0f0;
+    width: 1.5px;
+    height: 1.5px;
+    position: absolute;
+    border: #f0f0f0 0px solid;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0px 0px 3px 2px rgba(255, 255, 255, 0.5);
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes glow {
+    0% {
+      opacity: 0;
+      transform: scale(1, 1);
+    }
+    20% {
+      opacity: 0.5;
+    }
+    35% {
+      opacity: 1;
+    }
+    50% {
+      transform: scale(2, 2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
 .rocket_wrapper {
+    position: relative;
     background-image: url('../../assets/home_page_rocket.png');
     background-size: cover;
     background-position: 50% 55%;
     background-size: 50%;
     background-repeat: no-repeat;
-    height: 75%;
-    animation: rocket 6s ease-in-out infinite;
+    height: 74%;
+    animation: rocket 10s ease-in-out infinite;
 }
 
 @keyframes rocket {
@@ -22,20 +58,48 @@
         background-position: 50% 55%;
     }
 
-    25% {
-        background-position: 50% 50%;
+    10% {
+        background-position: 50% 48%;
+    }
+
+
+    20% {
+        background-position: 50% 52%;
+    }
+
+    30% {
+        background-position: 50% 49%;
+
+    }
+
+    40% {
+        background-position: 50% 62%;
     }
 
     50% {
-        background-position: 50% 55%;
+        background-position: 50% 58%;
     }
 
-    75% {
-        background-position: 50% 60%;
+    60%{
+        background-position: 50% 61%;
     }
+
+    70% {
+        background-position: 50% 53%;
+    }
+
+    80% {
+        background-position: 50% 57%;
+    }
+
+    90% {
+        background-position: 50% 54%;
+    }
+
     100% {
         background-position: 50% 55%;
     }
+
 }
 
 .logos_wrapper {
@@ -43,5 +107,8 @@
     background-position: 50% 100%;
     background-repeat: no-repeat;
     z-index: 3;
-    height: 16vh;
+
+    height: 18%;
+
+
 }

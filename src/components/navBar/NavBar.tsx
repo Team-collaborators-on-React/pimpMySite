@@ -1,25 +1,34 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './navBar.module.scss'
 
 const NavBar = () => {
     return (
-        <div>
+        <div className={styles.main}>
             <nav>
+          
                 <ul>
                     <li className={styles.logo}>
-                        <a href="#">
+                        <Link to='/'>
                             Pimp My Site <span className={styles.mini}></span>
-                        </a>
+                        </Link>
+                    </li>
+
+                 <li>
+                        <Link to='/services'>
+                            Services
+                        </Link>
                     </li>
                     <li>
-                        <a  href="#">Services</a>
+                        <Link to="/skills">
+                            Skills
+                        </Link>
                     </li>
                     <li>
-                        <a href="#">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#">Hit us up</a>
-                    </li>
+                        <Link to='/contactus'>
+                            Hit us up
+                        </Link>
+                    </li>                   
                 </ul>
             </nav>
         </div>
